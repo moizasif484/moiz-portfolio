@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured Projects by Moiz Asif — JARVIS Personal AI Assistant with futuristic Gold & Black interface, animated particle core, and voice interaction.">
+  <title>Featured Projects — Moiz Asif</title>
+
+  <!-- Favicon & Typography -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jarvis-glow.css">
+</head>
+<body>
+  <!-- Canvas for Astra Interactive Particle Field -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Cybernetic Grid & Radial Mouse Spotlight -->
+  <div class="cyber-grid"></div>
+  <div class="mouse-spotlight"></div>
+
+  <!-- Interactive Dual-Layer Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Moiz Asif Portfolio">
+        <span class="brand-text">MOIZ ASIF</span>
+        <span class="brand-badge">AI / DEV</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/923362383383" target="_blank" rel="noopener noreferrer" class="nav-cta">
+        <span class="pulse-dot"></span>
+        <span>Available for Work</span>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-drawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="https://wa.me/923362383383" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="margin-top: 0.5rem; justify-content: center;">
+      Chat on WhatsApp
+    </a>
+  </div>
+
+  <!-- Page Content Wrapper -->
+  <main class="page-wrapper">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-tag">ENGINEERED INTELLIGENCE</span>
+        <h1 class="section-title">Featured Projects</h1>
+        <p class="section-subtitle">
+          Real-world intelligent systems built with custom architectures and state-of-the-art AI.
+        </p>
+      </div>
+
+      <!-- Main Featured Project: JARVIS (Gold + Black Edition) -->
+      <div class="jarvis-showcase-wrapper">
+        <!-- Ambient Gold Glow Bloom -->
+        <div class="jarvis-ambient-bloom"></div>
+
+        <!-- Glass Container Card -->
+        <div class="jarvis-card">
+          <div class="jarvis-ambient-sheen"></div>
+          <div class="jarvis-layout">
+            <!-- Left Column: Premium Visual Showcase with Orbital Rings -->
+            <div class="jarvis-visual-frame">
+              <div class="orbital-ring orbital-ring-1"></div>
+              <div class="orbital-ring orbital-ring-2"></div>
+              <img 
+                src="assets/images/jarvis-gold.png" 
+                alt="JARVIS AI Assistant - Gold & Black Core Interface" 
+                class="jarvis-image"
+                loading="eager"
+              >
+            </div>
+
+            <!-- Right Column: Project Details & Tech Specs -->
+            <div class="jarvis-content">
+              <span class="jarvis-tag-badge">
+                <span>✦</span> FLAGSHIP AI ASSISTANT
+              </span>
+
+              <h2 class="jarvis-title">
+                JARVIS — <span class="jarvis-title-accent">Personal AI Assistant</span>
+              </h2>
+
+              <span class="jarvis-byline">
+                A futuristic desktop AI assistant built by Moiz Asif.
+              </span>
+
+              <!-- Real Verified Features -->
+              <div class="jarvis-features-container">
+                <div class="jarvis-features-title">AUTHENTIC CAPABILITIES</div>
+                <div class="jarvis-features-grid">
+                  <div class="jarvis-feature-item">
+                    <span class="jarvis-feature-icon">◆</span>
+                    <span>Futuristic animated AI interface</span>
+                  </div>
+                  <div class="jarvis-feature-item">
+                    <span class="jarvis-feature-icon">◆</span>
+                    <span>Animated AI core with particle system</span>
+                  </div>
+                  <div class="jarvis-feature-item">
+                    <span class="jarvis-feature-icon">◆</span>
+                    <span>Custom UI design &amp; orbital telemetry</span>
+                  </div>
+                  <div class="jarvis-feature-item">
+                    <span class="jarvis-feature-icon">◆</span>
+                    <span>AI interaction &amp; voice responsiveness</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech Stack -->
+              <div class="jarvis-tech-stack">
+                <div class="jarvis-features-title">TECHNOLOGY STACK</div>
+                <div class="jarvis-tech-tags">
+                  <span class="jarvis-tech-chip">Python</span>
+                  <span class="jarvis-tech-chip">AI APIs</span>
+                  <span class="jarvis-tech-chip">Voice Recognition</span>
+                  <span class="jarvis-tech-chip">Text-to-Speech</span>
+                  <span class="jarvis-tech-chip">Automation</span>
+                  <span class="jarvis-tech-chip">Custom UI</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="jarvis-btn-group">
+                <button id="open-demo-modal" class="btn btn-jarvis-gold">
+                  <span>Live Demo</span>
+                  <span class="btn-icon">⚡</span>
+                </button>
+                <a href="https://github.com/moizasif484/" target="_blank" rel="noopener noreferrer" class="btn btn-jarvis-outline">
+                  <span>GitHub</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+                <button id="open-details-modal" class="btn btn-jarvis-outline">
+                  <span>View Details</span>
+                  <span class="btn-icon">ⓘ</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Modal for Demo & Details -->
+    <div id="jarvis-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-card">
+        <button id="close-modal-btn" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <div id="modal-dynamic-content">
+          <!-- Populated via js/main.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-credits">
+          © 2026 Moiz Asif. AI Agent &amp; Web Developer. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/moizasif484/" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          <a href="https://www.instagram.com/moiz_here_07/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+          <a href="https://wa.me/923362383383" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Interactive Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
