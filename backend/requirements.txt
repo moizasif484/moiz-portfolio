@@ -1,0 +1,19 @@
+# Moiz AI Portfolio Backend — Dependencies
+
+# Core framework
+flask==3.0.3
+flask-cors==4.0.1
+python-dotenv==1.0.1
+
+# AI Providers (install the one you use)
+# Google Gemini (recommended - free tier available)
+google-generativeai==0.8.3
+
+# OpenAI (optional)
+# openai==1.51.0
+
+# Anthropic Claude (optional)
+# anthropic==0.36.0
+
+# Optional: production server
+gunicorn==23.0.0

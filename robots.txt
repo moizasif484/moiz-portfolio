@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /backend/
+
+Sitemap: https://moizasif484.github.io/moiz-portfolio/sitemap.xml
