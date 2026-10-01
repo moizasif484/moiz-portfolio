@@ -284,7 +284,7 @@
   color: #ffffff;
 }
 
-/* Modal Popup for Details & Demo */
+/* Modal Popup for Demo & Details — single source of truth for show/hide */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -292,15 +292,15 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1));
   padding: 1.5rem;
 }
 
@@ -320,18 +320,22 @@
   overflow-y: auto;
   padding: 2.5rem;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 170, 0, 0.12);
-  transform: translateY(20px) scale(0.97);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  transform: scale(0.96);
+  transition: transform 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)),
+              opacity 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1));
 }
 
 .modal-overlay.active .modal-card {
-  transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
 
 .modal-close-btn {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
+  z-index: 5;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #ffffff;
